@@ -102,6 +102,34 @@ CREATE SEQUENCE HOTEL_GESTAO.seq_cod_usuario
     ORDER 
 ;
 
+CREATE SEQUENCE HOTEL_GESTAO.seq_cod_quarto 
+    START WITH 1 
+    MAXVALUE 99999 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE SEQUENCE HOTEL_GESTAO.seq_cod_setor 
+    START WITH 1 
+    MAXVALUE 99999 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE SEQUENCE HOTEL_GESTAO.seq_cod_perfil 
+    START WITH 1 
+    MAXVALUE 9999 
+    NOCACHE 
+    ORDER 
+;
+
+CREATE SEQUENCE HOTEL_GESTAO.seq_cod_usuario_perfil 
+    START WITH 1 
+    MAXVALUE 99999 
+    NOCACHE 
+    ORDER 
+;
+
 CREATE TABLE HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO 
     ( 
      COD_AUDITORIA_ALTERACAO NUMBER (19) 
@@ -876,6 +904,42 @@ BEGIN
 END;
 /
 
+CREATE OR REPLACE TRIGGER HOTEL_GESTAO.QUARTO_COD_QUARTO_TRG 
+BEFORE INSERT ON HOTEL_GESTAO.TB_QUARTO 
+FOR EACH ROW 
+WHEN (NEW.COD_QUARTO IS NULL) 
+BEGIN 
+    :NEW.COD_QUARTO := HOTEL_GESTAO.seq_cod_quarto.NEXTVAL; 
+END;
+/
+
+CREATE OR REPLACE TRIGGER HOTEL_GESTAO.SETOR_COD_SETOR_TRG 
+BEFORE INSERT ON HOTEL_GESTAO.TB_SETOR 
+FOR EACH ROW 
+WHEN (NEW.COD_SETOR IS NULL) 
+BEGIN 
+    :NEW.COD_SETOR := HOTEL_GESTAO.seq_cod_setor.NEXTVAL; 
+END;
+/
+
+CREATE OR REPLACE TRIGGER HOTEL_GESTAO.PERFIL_COD_PERFIL_TRG 
+BEFORE INSERT ON HOTEL_GESTAO.TB_PERFIL 
+FOR EACH ROW 
+WHEN (NEW.COD_PERFIL IS NULL) 
+BEGIN 
+    :NEW.COD_PERFIL := HOTEL_GESTAO.seq_cod_perfil.NEXTVAL; 
+END;
+/
+
+CREATE OR REPLACE TRIGGER HOTEL_GESTAO.USU_PERFIL_COD_USU_PERF_TRG 
+BEFORE INSERT ON HOTEL_GESTAO.TB_USUARIO_PERFIL 
+FOR EACH ROW 
+WHEN (NEW.COD_USUARIO_PERFIL IS NULL) 
+BEGIN 
+    :NEW.COD_USUARIO_PERFIL := HOTEL_GESTAO.seq_cod_usuario_perfil.NEXTVAL; 
+END;
+/
+
 
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
@@ -889,7 +953,7 @@ END;
 -- CREATE PACKAGE BODY                      0
 -- CREATE PROCEDURE                         0
 -- CREATE FUNCTION                          0
--- CREATE TRIGGER                           9
+-- CREATE TRIGGER                           13
 -- ALTER TRIGGER                            0
 -- CREATE COLLECTION TYPE                   0
 -- CREATE STRUCTURED TYPE                   0
@@ -902,7 +966,7 @@ END;
 -- CREATE DISK GROUP                        0
 -- CREATE ROLE                              0
 -- CREATE ROLLBACK SEGMENT                  0
--- CREATE SEQUENCE                          9
+-- CREATE SEQUENCE                          13
 -- CREATE MATERIALIZED VIEW                 0
 -- CREATE MATERIALIZED VIEW LOG             0
 -- CREATE SYNONYM                           0
@@ -918,5 +982,5 @@ END;
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                   3
+-- ERRORS                                   0
 -- WARNINGS                                 0
