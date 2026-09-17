@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C05487FE-3898-C180-C367-2244A82917AC" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_AUDITORIA_ALTERACAO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_AUDITORIA_ALTERACAO" id="EB6FE200-C405-8AEA-20D9-90D42030E401">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_AUDITORIA_ALTERACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_auditoria_alteracao</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_AUD_ALT_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_COD_AUDITORIA_ALTERACAO</notNullConstraintName>
+</Column>
+<Column name="COD_AUDITORIA_EVENTO" id="DFDB3595-2504-B067-82EE-209065E8AFF5">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_AUDITORIA_EVENTO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_AUD_ALT_EVENTO</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6A2966B7-E5DB-AEA5-2B3F-CE4E343D6121" referredColumn="C1388291-9C02-2194-373E-89F653694BB9"/>
+</associations>
+</Column>
+<Column name="NOM_TABELA" id="B5D06286-2EF1-FF50-6A13-830B25CBEBCF">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>NOM_TABELA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_COD_NOM_TABELA</notNullConstraintName>
+</Column>
+<Column name="COD_REGISTRO" id="402E82CA-30FA-1B5C-9D1C-806C5027B484">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_REGISTRO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_COD_REGISTRO</notNullConstraintName>
+</Column>
+<Column name="NOM_CAMPO" id="7FC42DB1-A29E-610B-B8DB-3E387FFBE84E">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>NOM_CAMPO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_CAMPO</notNullConstraintName>
+</Column>
+<Column name="DSC_VALOR_ANTERIOR" id="CB347754-6297-5018-D3C4-B845C4203204">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>DSC_VALOR_ANTERIOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_VALOR_NOVO" id="D5B7CFAC-6290-5CD2-71DC-4F97D8266675">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>DSC_VALOR_NOVO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6847F333-76A1-EFE4-3789-0EA42AF4CA59" name="TB_AUDITORIA_ALTERACAO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB6FE200-C405-8AEA-20D9-90D42030E401"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51472BDC-1AC2-5644-582F-C935FD4F26C5" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_AUDITORIA_ALTERACAO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB6FE200-C405-8AEA-20D9-90D42030E401"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C88FFD71-FC0F-BB8A-36DF-0D90CC5E7059" name="FK_AUD_ALT_EVENTO">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFDB3595-2504-B067-82EE-209065E8AFF5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

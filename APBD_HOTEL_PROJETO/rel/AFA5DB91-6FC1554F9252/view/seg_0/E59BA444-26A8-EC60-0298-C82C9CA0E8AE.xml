@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="E59BA444-26A8-EC60-0298-C82C9CA0E8AE" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="VW_USUARIO_CONSULTA">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>VW_USUARIO_CONSULTA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_USUARIO_CONSULTA
+AS 
+SELECT HOTEL_GESTAO.TB_USUARIO.COD_USUARIO,
+  HOTEL_GESTAO.TB_USUARIO.NOM_USUARIO,
+  HOTEL_GESTAO.TB_USUARIO.DSC_EMAIL,
+  HOTEL_GESTAO.TB_USUARIO.DSC_SITUACAO,
+  HOTEL_GESTAO.TB_USUARIO.DT_CRIACAO,
+  HOTEL_GESTAO.TB_USUARIO.DT_ULTIMO_LOGIN,
+  HOTEL_GESTAO.TB_USUARIO.DT_ATUALIZACAO
+FROM HOTEL_GESTAO.TB_USUARIO]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COD_USUARIO" id="4AD39A3A-C090-828B-805E-FCF865B1BEDF">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>COD_USUARIO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_USUARIO</alias>
+<dataType>NUMBER (19)</dataType>
+<headerAlias>COD_USUARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>F4727860-FE84-2BC4-9755-B02769DA17C6</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="NOM_USUARIO" id="B3BC8CB4-730C-1D2D-9D43-C36C2BF6FA1C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>NOM_USUARIO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_USUARIO</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<headerAlias>NOM_USUARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>EBAC92DD-5912-01ED-B185-9576545694DD</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DSC_EMAIL" id="785B9A74-1CFA-8137-5698-029D62D24D17">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>DSC_EMAIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_EMAIL</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<headerAlias>DSC_EMAIL</headerAlias>
+<reference>false</reference>
+<referencedColumn>49866B48-0EE4-2637-3B07-FFB405CD0801</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DSC_SITUACAO" id="686D2814-9D94-AF2E-3A88-8ED45B0A7213">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>DSC_SITUACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_SITUACAO</alias>
+<dataType>VARCHAR2 (200 BYTE)</dataType>
+<headerAlias>DSC_SITUACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>FC9853B0-963D-E413-B045-8B5A524A4D2A</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_CRIACAO" id="F5083657-AF78-0DEE-DA47-44D2063ADD86">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>DT_CRIACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_CRIACAO</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_CRIACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>6FF4EA1B-B881-73FB-214D-F36F759B33EE</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_ULTIMO_LOGIN" id="A62CD951-B8C4-0446-14AD-CB298876CAF2">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>DT_ULTIMO_LOGIN</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_ULTIMO_LOGIN</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_ULTIMO_LOGIN</headerAlias>
+<reference>false</reference>
+<referencedColumn>F784DE2D-D93D-BCF6-3F38-3037950F5F46</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_ATUALIZACAO" id="10E61FCB-1D3E-3B04-BF1F-CC5E0F79C48A">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>VW_USUARIO_CONSULTA</sourceObjSchema>
+<sourceObjName>DT_ATUALIZACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:15 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_ATUALIZACAO</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_ATUALIZACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>2D2F0AD6-42B4-9986-6F78-0B09D2E7349A</referencedColumn>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E0DCD356-5AFA-B92B-91D5-67942A40B18C">
+<container>true</container>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F4727860-FE84-2BC4-9755-B02769DA17C6">
+<columnName>COD_USUARIO</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EBAC92DD-5912-01ED-B185-9576545694DD">
+<columnName>NOM_USUARIO</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="49866B48-0EE4-2637-3B07-FFB405CD0801">
+<columnName>DSC_EMAIL</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FC9853B0-963D-E413-B045-8B5A524A4D2A">
+<columnName>DSC_SITUACAO</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6FF4EA1B-B881-73FB-214D-F36F759B33EE">
+<columnName>DT_CRIACAO</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F784DE2D-D93D-BCF6-3F38-3037950F5F46">
+<columnName>DT_ULTIMO_LOGIN</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2D2F0AD6-42B4-9986-6F78-0B09D2E7349A">
+<columnName>DT_ATUALIZACAO</columnName>
+<schema>HOTEL_GESTAO</schema>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

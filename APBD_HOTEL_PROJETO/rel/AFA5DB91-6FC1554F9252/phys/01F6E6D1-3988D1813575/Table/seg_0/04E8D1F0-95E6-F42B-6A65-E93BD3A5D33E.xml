@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_PROTOCOLO" directorySegmentName="seg_0" id="04E8D1F0-95E6-F42B-6A65-E93BD3A5D33E">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_HOSPEDE" id="03F67EDD-09EA-C18D-EC1F-78008E889551">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_HOTEL" id="1155F415-1C01-5B0A-0D78-6AB18ECD3C2E">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_TIPO" id="1C1C391B-784D-5952-93AE-C2474E86CA44">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PROTOCOLO" id="1CB9C3EC-8057-0623-57D1-E7DA6F3186BB">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NOM_TITULO" id="23C2F041-1F78-2E15-784D-C2B371E883A4">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_PRIORIDADE" id="327ACD07-0F87-BFC9-1386-936B86D096FC">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<defaultValue>&apos;NORMAL&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="DT_ENCERRAMENTO" id="546114A3-AAFF-E94B-285A-6E2165A1DF40">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_PROTOCOLO" id="57F50133-2EA7-F57A-3640-BE5A5015B7B7">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESERVA" id="66512609-E558-CA4C-966A-B65D67C4F409">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESPONSAVEL_ATUAL" id="7371B861-7F9D-0D30-3FD1-1794D3D91357">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_ABERTURA" id="7E99B2C8-EF8E-529D-796E-8827C3CE5DB6">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_SETOR_ATUAL" id="AF64A8EB-5DA9-FAB0-24CB-1D2D56F9CAF7">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TXT_DESCRICAO" id="B6F14D69-46C2-C400-6A6F-7731795FE63B">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_STATUS" id="C6D8CA92-9487-E50B-E39B-C1ED9A7CF144">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_PROTOCOLO_PK" id="B05122DA-5847-867C-2228-D94EBE0C6A62">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_PROTOCOLO_HOTEL_NUMERO" id="FA50157A-B724-05C9-6E57-691DBFF775D5">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_SETOR_ATUAL" id="1E0AC996-EA63-D49A-6E67-E17179C78D10">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_USUARIO" id="67266746-2737-6108-B641-735B6DE13C59">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_HOTEL" id="A77C427F-1CCC-7B48-B13C-14532FBA04D7">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_RESERVA" id="C6C4791C-E017-406D-943A-32BA27BA926F">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TB_PROTOCOLO_TB_HOSPEDE_FK" id="E4A4B761-1004-B2CC-B076-EDBF348C4FC0">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_PROTOCOLO_PK" id="FC2897E6-F11E-C198-3AAE-8F9A064E7616">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>B05122DA-5847-867C-2228-D94EBE0C6A62</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_PROTOCOLO_HOTEL_NUMERO" id="4280736F-CBE9-CBCD-F25F-2E11BA3E2D83">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>FA50157A-B724-05C9-6E57-691DBFF775D5</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

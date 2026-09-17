@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB38BC43-65D4-C27D-5345-D840014385AC" containerWithKeyObject="871C5C82-2756-DDA7-0FBF-099566A0D3F8" localFKIndex="C0416737-25F7-C411-88EA-28171020FBB7" name="FK_MOV_PROTOCOLO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>FK_MOV_PROTOCOLO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<referredTableLongName>HOTEL_GESTAO.TB_PROTOCOLO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04E8D1F0-95E6-F42B-6A65-E93BD3A5D33E</referredTableID>
+<keyObject>FC2897E6-F11E-C198-3AAE-8F9A064E7616</keyObject>
+<referredKeyID>FC2897E6-F11E-C198-3AAE-8F9A064E7616</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_PROTOCOLO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

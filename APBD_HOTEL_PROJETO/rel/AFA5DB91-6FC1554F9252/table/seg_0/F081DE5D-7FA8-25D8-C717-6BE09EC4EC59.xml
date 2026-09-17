@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F081DE5D-7FA8-25D8-C717-6BE09EC4EC59" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_PERFIL">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_PERFIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_PERFIL" id="F2021023-CE68-3835-98D1-D12F67BC234F">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_PERFIL</sourceObjSchema>
+<sourceObjName>COD_PERFIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_perfil</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_PERFIL_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_PRF_COD_PERFIL</notNullConstraintName>
+</Column>
+<Column name="NOM_PERFIL" id="2D86287A-C71F-DB1D-39AE-C1E7ADDA2CEF">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_PERFIL</sourceObjSchema>
+<sourceObjName>NOM_PERFIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_PERFIL</notNullConstraintName>
+</Column>
+<Column name="DSC_PERFIL" id="0031670B-F298-8C85-5FF5-FD7669F30371">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_PERFIL</sourceObjSchema>
+<sourceObjName>DSC_PERFIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IND_ATIVO" id="A5C1A1EB-B00D-F68E-1CF0-6FD95E3BE7C0">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_PERFIL</sourceObjSchema>
+<sourceObjName>IND_ATIVO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<constraintName>CK_PERFIL_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PRF_ATIVO</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F6E24F2A-7D24-711A-338C-ED15E673EABB" name="TB_PERFIL_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_PERFIL_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2021023-CE68-3835-98D1-D12F67BC234F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C52A5F-7ED1-39D9-3B9B-CDEB1A28877D" name="UK_PERFIL_NOME">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_PERFIL_NOME</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D86287A-C71F-DB1D-39AE-C1E7ADDA2CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C80413F1-7FF6-3F61-FBE7-06283E05317B" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_PERFIL_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_PERFIL_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2021023-CE68-3835-98D1-D12F67BC234F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7372BAE1-DFDD-181F-7EA3-7F8C52D50039" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="UK_PERFIL_NOME">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_PERFIL_NOME</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D86287A-C71F-DB1D-39AE-C1E7ADDA2CEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

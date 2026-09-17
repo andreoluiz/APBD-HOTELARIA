@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_RESERVA" directorySegmentName="seg_0" id="EE8BD111-ED13-F5B7-E021-F592C410893C">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TXT_OBSERVACAO" id="091F6F83-7D07-DA83-7594-FE611D98BB26">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_ENTRADA_PREVISTA" id="24B03487-7CFB-5006-EE31-90BB622E731A">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_RESERVA" id="3BDDDBE2-CB39-A06D-A5E2-74B4AB36CC45">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_HOTEL" id="3FAE3631-6B98-3AC8-F8F4-5EDC40103949">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_QUARTO" id="40F37D4A-7063-F90D-444C-5CA37F1D6767">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESERVA" id="5ACCC751-309E-6063-4C78-D97776CA496D">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="COD_HOSPEDE" id="5B9E8529-0963-7866-9A0D-C7E205396642">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_RESERVA" id="810A41C1-09D6-5239-4D92-8B2D92052938">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_SAIDA_PREVISTA" id="8FF7D35B-1A80-9FFB-EB10-37DD9011750B">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTD_HOSPEDES" id="A1FB729F-F4E0-F10C-A250-B833C126412B">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_SITUACAO" id="E40A557D-AD20-A6D3-DC6F-0A4DF9BC5273">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_RESERVA_NUMERO" id="DC331A2E-ECFC-DA2A-88ED-21658F8E1DFC">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_RESERVA_PK" id="F0CD0A98-3FD3-3B72-9623-3873568432C2">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RES_HOSPEDE" id="103126CE-FD54-4241-F204-1EED8E3CE2DF">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RES_HOTEL" id="17026C5E-14DA-5CF4-132C-7B511EAD2C6A">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_RES_QUARTO" id="D27821D1-11EF-AED1-5E0F-AB6F3DDCB3DD">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_RESERVA_PK" id="0234AE89-DA65-D0FC-AF3E-34F0D9BD43D9">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>F0CD0A98-3FD3-3B72-9623-3873568432C2</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_RESERVA_NUMERO" id="500F1BE8-B7E5-8D88-92D0-B439B77A5D90">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>DC331A2E-ECFC-DA2A-88ED-21658F8E1DFC</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

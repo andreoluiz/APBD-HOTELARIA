@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F2AF87B-77B1-9081-CE8B-645BB6E1BA25" containerWithKeyObject="04E8D1F0-95E6-F42B-6A65-E93BD3A5D33E" localFKIndex="E4A4B761-1004-B2CC-B076-EDBF348C4FC0" name="TB_PROTOCOLO_TB_HOSPEDE_FK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_PROTOCOLO_TB_HOSPEDE_FK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<referredTableLongName>HOTEL_GESTAO.TB_HOSPEDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>961F8039-A854-C278-2F1E-A4834282B7EE</referredTableID>
+<keyObject>7A96349D-948A-2577-5BE9-A85D37D1B99E</keyObject>
+<referredKeyID>7A96349D-948A-2577-5BE9-A85D37D1B99E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>COD_HOSPEDE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

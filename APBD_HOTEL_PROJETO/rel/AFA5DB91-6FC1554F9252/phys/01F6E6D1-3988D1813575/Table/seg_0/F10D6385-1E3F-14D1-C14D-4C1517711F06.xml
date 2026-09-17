@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_QUARTO" directorySegmentName="seg_0" id="F10D6385-1E3F-14D1-C14D-4C1517711F06">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUM_ANDAR" id="51E71D54-610A-50E6-0217-FCD5AE89BCCC">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_QUARTO" id="63A111AC-6BCF-9E4B-5040-89591B1879CB">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTD_CAPACIDADE" id="64862E4B-255E-6617-1954-E67A23C683A8">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_TIPO" id="8AE52AF8-D712-B07F-D469-40924578FC15">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_QUARTO" id="B67E0009-F6C5-289A-1ABB-805D9122575D">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="COD_HOTEL" id="C725BB12-73B5-2943-4915-65D7DCE1F95B">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_SITUACAO" id="EB1F0A56-A787-94BB-3212-6599632D2D6C">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_QUARTO_PK" id="C0320C50-34C7-3646-089F-4EB3B188165E">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_QUA_HOTEL" id="A4613857-6F9D-BE77-A3C0-C5E7C4DBEBE6">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_QUARTO_PK" id="F894A412-E91D-DCDC-0E88-5C7842F627D1">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>C0320C50-34C7-3646-089F-4EB3B188165E</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

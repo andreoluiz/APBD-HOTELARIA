@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2D7B00F9-40F4-3861-95E5-FE0F53F799E8" containerWithKeyObject="871C5C82-2756-DDA7-0FBF-099566A0D3F8" localFKIndex="93DC89A8-14BC-85C4-645D-7ED29833F6FF" name="FK_MOV_SETOR_ORIGEM">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>FK_MOV_SETOR_ORIGEM</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<referredTableLongName>HOTEL_GESTAO.TB_SETOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4DA0C994-192E-33C1-13D6-0E93ECD1CB0A</referredTableID>
+<keyObject>D858581A-10E0-92DD-BDE8-35579BC15104</keyObject>
+<referredKeyID>D858581A-10E0-92DD-BDE8-35579BC15104</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>COD_SETOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

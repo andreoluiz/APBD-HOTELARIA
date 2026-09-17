@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_USUARIO_PERFIL" directorySegmentName="seg_0" id="B0ADF199-DE13-619B-45F0-C6BCC4C19821">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COD_USUARIO" id="0B2366E0-1B27-866B-EA3C-9C94F1CC6EBB">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PERFIL" id="73DB54C6-7275-F54F-7050-F3C4B9C5E006">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_CRIACAO" id="F406363C-8C60-9062-0B92-FD67B1C2A427">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_USUARIO_PERFIL_PK" id="1461FE2D-4326-EF8C-F03E-B3B256C671C9">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TB_USUARIO_PERFIL_TB_PERFIL_FK" id="160C2E56-7DCB-5854-FE52-46F9D3ABD1E7">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_USP_USUARIO" id="DD9EFF32-1167-6451-2CF3-01B6C7BD18BD">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_USUARIO_PERFIL_PK" id="4D1700C8-3C5C-E780-544D-F97636DE3511">
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+<existingIndex>1461FE2D-4326-EF8C-F03E-B3B256C671C9</existingIndex>
+<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

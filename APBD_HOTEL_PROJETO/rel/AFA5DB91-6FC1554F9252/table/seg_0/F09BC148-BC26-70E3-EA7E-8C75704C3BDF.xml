@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F09BC148-BC26-70E3-EA7E-8C75704C3BDF" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_HOTEL">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_HOTEL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HOTEL" id="96E9201D-9A6C-5993-1894-5600A96A767C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>COD_HOTEL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_hotel</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_HOTEL_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_HTL_COD_HOTEL</notNullConstraintName>
+</Column>
+<Column name="NOM_HOTEL" id="439F2166-D6E4-6AF2-7B48-C79180FE3907">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>NOM_HOTEL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_HOTEL</notNullConstraintName>
+</Column>
+<Column name="DSC_ENDERECO" id="F3D0BA10-D962-4626-AD42-F0E1C0214B08">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>DSC_ENDERECO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_CIDADE" id="3940C2B9-98B6-E82F-AAD0-F3AF56252821">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>NOM_CIDADE</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIG_UF" id="E58DF4A1-A52E-11C1-DF6D-B6E32D1FA0E7">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>SIG_UF</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_TELEFONE" id="74EDCE04-6C21-74D3-C087-77908449D98C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>NUM_TELEFONE</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_EMAIL" id="5AF246BE-0EEA-F961-D3BF-BB70BABCECE2">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>DSC_EMAIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IND_ATIVO" id="B2EA0BE8-140D-E8C3-1D6B-F745FA4A52A5">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>IND_ATIVO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<constraintName>CK_HOTEL_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_HTL_ATIVO</notNullConstraintName>
+</Column>
+<Column name="DT_CRIACAO" id="D4CDF40E-DA81-B932-2ECF-C7C1598160A2">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_HOTEL</sourceObjSchema>
+<sourceObjName>DT_CRIACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_HTL_CRIACAO</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC228D3F-F228-1AF9-A967-92EA39468FD8" name="TB_HOTEL_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_HOTEL_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E9201D-9A6C-5993-1894-5600A96A767C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C39B546-57A5-9E65-4D9B-A3F4F7814D1E" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_HOTEL_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_HOTEL_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:17 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96E9201D-9A6C-5993-1894-5600A96A767C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

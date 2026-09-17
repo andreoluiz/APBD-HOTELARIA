@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2E21EB27-A175-1510-5651-A82FFDF4D35D" containerWithKeyObject="74C86B52-651D-D435-7CDA-CD70ECD07CA2" localFKIndex="2C4BC1F6-4342-841A-9FB0-B1270EA470FB" name="FK_PAY_EVENTO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>FK_PAY_EVENTO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-09-17 23:35:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<referredTableLongName>HOTEL_GESTAO.TB_AUDITORIA_EVENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30B58A1C-6782-F9DD-2ABC-306DA3126527</referredTableID>
+<keyObject>BAE39B3F-DFCA-E8B4-EB5E-92C26B93F4C5</keyObject>
+<referredKeyID>BAE39B3F-DFCA-E8B4-EB5E-92C26B93F4C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_AUDITORIA_EVENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
