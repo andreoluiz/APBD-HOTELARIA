@@ -3,7 +3,18 @@
 --   site:      Oracle Database 21c
 --   tipo:      Oracle Database 21c
 
+ALTER SESSION SET CONTAINER = XEPDB1
+;
 
+BEGIN
+    EXECUTE IMMEDIATE 'DROP USER HOTEL_GESTAO CASCADE';
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE != -1918 THEN
+            RAISE;
+        END IF;
+END;
+/
 
 CREATE USER HOTEL_GESTAO 
     IDENTIFIED BY PROJHOTEL 
