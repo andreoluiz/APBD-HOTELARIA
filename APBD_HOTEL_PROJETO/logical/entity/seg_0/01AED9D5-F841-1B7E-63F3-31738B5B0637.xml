@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01AED9D5-F841-1B7E-63F3-31738B5B0637" name="TB RESERVA">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>EE8BD111-ED13-F5B7-E021-F592C410893C</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD RESERVA" id="5B7B352D-5DC9-A957-3789-C3EBD15FF24D">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>5ACCC751-309E-6063-4C78-D97776CA496D</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD HOSPEDE" id="CDF89AE0-177D-D53A-C5B0-75EA439A4515">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>B8DDE0F6-6943-30DD-F284-B7E1E486F0D7</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<referedAttribute>FACB9794-0D90-D0A6-3FB9-BF08D819ADD9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD QUARTO" id="4491382F-95F5-8299-E804-F0744F2607D6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>FF3EE00D-88CF-2CA9-94E3-B2416C1B353A</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<referedAttribute>810FB9EE-0067-51DE-21A3-EE6F27688D19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUM RESERVA" id="B46714BD-97DB-713F-571F-9C0DD6765826">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>3BDDDBE2-CB39-A06D-A5E2-74B4AB36CC45</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT RESERVA" id="A9E56F9C-2147-B774-C426-BB7DB9D0D680">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>810A41C1-09D6-5239-4D92-8B2D92052938</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT ENTRADA PREVISTA" id="DCEE624A-2776-FBB2-E109-8E8FB7E3065E">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>24B03487-7CFB-5006-EE31-90BB622E731A</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT SAIDA PREVISTA" id="FB478549-BB7D-D4E0-8C91-F4E8B27DD916">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>8FF7D35B-1A80-9FFB-EB10-37DD9011750B</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QTD HOSPEDES" id="F790CE44-70C8-CE36-68B2-47E364D9BBE6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>A1FB729F-F4E0-F10C-A250-B833C126412B</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<constraintName>CK_QTD_HOSPEDES_POSITIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="QTD_HOSPEDES &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DSC SITUACAO" id="5AE36CEA-3C4D-D58C-0BFB-04C87D65045E">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>E40A557D-AD20-A6D3-DC6F-0A4DF9BC5273</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<constraintName>CK_RESERVA_SITUACAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="CANCELADA" description=""/>
+<valueDef value="CONCLUIDA" description=""/>
+<valueDef value="CONFIRMADA" description=""/>
+<valueDef value="EM ANDAMENTO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TXT OBSERVACAO" id="D9079EC4-42B1-4D50-8F96-0C80598BCBC3">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>091F6F83-7D07-DA83-7594-FE611D98BB26</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD HOTEL" id="4B655065-16BA-4BD5-647E-B253A7C49093">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>FC1540B1-BEE1-66AF-548E-9A6E5F0614D5</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<referedAttribute>1A759F70-5276-E7DD-17C9-E494A3221633</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C57E6591-ED8C-3CB1-CEAF-0EEBA1043165" name="TB RESERVA PK">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>0234AE89-DA65-D0FC-AF3E-34F0D9BD43D9</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B7B352D-5DC9-A957-3789-C3EBD15FF24D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="398F703C-D9D7-FF97-28E6-375FB01B18CB" name="UK RESERVA NUMERO">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>500F1BE8-B7E5-8D88-92D0-B439B77A5D90</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>B46714BD-97DB-713F-571F-9C0DD6765826</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

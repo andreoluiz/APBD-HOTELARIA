@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_RESERVA_BIU_QUARTO" directorySegmentName="seg_0" id="A27EAAA3-5644-5CCA-6631-A7D28F6E7B0D">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:45:43 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[DECLARE
+    V_SITUACAO HOTEL_GESTAO.TB_QUARTO.DSC_SITUACAO%TYPE;
+BEGIN
+
+    SELECT DSC_SITUACAO
+      INTO V_SITUACAO
+      FROM HOTEL_GESTAO.TB_QUARTO
+     WHERE COD_QUARTO = :NEW.COD_QUARTO;
+
+    IF V_SITUACAO <> 'DISPONIVEL' THEN
+        RAISE_APPLICATION_ERROR(
+            -20001,
+            'O quarto selecionado nao esta disponivel para reserva.'
+        );
+    END IF;
+
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>40F37D4A-7063-F90D-444C-5CA37F1D6767</columns>
+<owner>7A8B1D92-A869-040F-7EF5-5CA0C1ED529D</owner>
+<table>EE8BD111-ED13-F5B7-E021-F592C410893C</table>
+</TriggerOraclev10g>

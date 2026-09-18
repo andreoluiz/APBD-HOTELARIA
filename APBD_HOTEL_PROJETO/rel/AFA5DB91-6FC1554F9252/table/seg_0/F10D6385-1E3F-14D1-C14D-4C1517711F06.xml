@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_QUARTO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -101,11 +102,15 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<constraintName>CK_QUARTO_CAPACIDADE_POSITIVA</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="QTD_CAPACIDADE &gt; 0"/>
+</checkConstraint>
 <ownDataTypeParameters>,3,0</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>NN_QTD_CAPACIDADE</notNullConstraintName>
@@ -117,10 +122,17 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<constraintName>CK_QUARTO_SITUACAO</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="DISPONIVEL" description=""/>
+<valueDef value="INATIVO" description=""/>
+<valueDef value="MANUTENCAO" description=""/>
+<valueDef value="OCUPADO" description=""/>
+</listOfValues>
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <notNullConstraintName>NN_QUA_SITUACAO</notNullConstraintName>
@@ -139,6 +151,19 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B67E0009-F6C5-289A-1ABB-805D9122575D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9E5E895-B1C6-BBFA-913A-8EB4AC145042" name="UK_QUARTO_HOTEL_NUMERO">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>76B9D124-6A55-B6EA-46FC-05F4B7A17E67</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C725BB12-73B5-2943-4915-65D7DCE1F95B"/>
+<colUsage columnID="63A111AC-6BCF-9E4B-5040-89591B1879CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C0320C50-34C7-3646-089F-4EB3B188165E" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_QUARTO_PK">

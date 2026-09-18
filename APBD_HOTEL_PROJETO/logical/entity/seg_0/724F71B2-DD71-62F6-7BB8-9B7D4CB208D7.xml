@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="724F71B2-DD71-62F6-7BB8-9B7D4CB208D7" name="TB USUARIO">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>E0DCD356-5AFA-B92B-91D5-67942A40B18C</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD USUARIO" id="99ABDAFB-5064-8397-BCE8-F6DDAB848143">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>F4727860-FE84-2BC4-9755-B02769DA17C6</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOM USUARIO" id="7D69F744-F2F4-7C55-5373-B693D5AF18C3">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>EBAC92DD-5912-01ED-B185-9576545694DD</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DSC EMAIL" id="32C8B8F8-A2D4-65EF-64DD-19CDD310C128">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>49866B48-0EE4-2637-3B07-FFB405CD0801</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DSC SENHA HASH" id="56A40BE4-8901-E635-DCA9-3E5ADCC85B9A">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>BD0D805A-CAC6-D14F-46CA-E3B70D6E309D</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DSC SITUACAO" id="DAA17875-A495-815A-05DF-1342A562AC34">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>FC9853B0-963D-E413-B045-8B5A524A4D2A</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<constraintName>CK_USUARIO_SITUACAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;ATIVO&apos;" description=""/>
+<valueDef value="&apos;BLOQUEADO&apos;" description=""/>
+<valueDef value="&apos;INATIVO&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;ATIVO&apos;</defaultValue>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT CRIACAO" id="E7E50EB0-0629-82D5-5569-8480E6B26B3A">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>6FF4EA1B-B881-73FB-214D-F36F759B33EE</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT ATUALIZACAO" id="3A12C066-8F49-F25A-6193-4D7930272D44">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>2D2F0AD6-42B4-9986-6F78-0B09D2E7349A</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT ULTIMO LOGIN" id="651924E0-364B-3C03-7E4E-8B3DCD079AFD">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>F784DE2D-D93D-BCF6-3F38-3037950F5F46</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6DCE9D7C-7FBA-E2FE-375E-4E89BD5E615B" name="TB USUARIO PK">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>E47B6232-0173-51EE-C651-9F27B50A3AE3</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>99ABDAFB-5064-8397-BCE8-F6DDAB848143</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="24AA50D3-7946-3E27-9824-0429F6535FAE" name="UK USUARIO EMAIL">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>E897106D-96C8-0DC0-949E-58A1D1121A9F</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>32C8B8F8-A2D4-65EF-64DD-19CDD310C128</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

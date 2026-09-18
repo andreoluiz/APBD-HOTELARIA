@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_PAY_EVENTO" directorySegmentName="seg_0" id="91DE38CA-DF84-9BAF-11DD-D5694E6C5B2A">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>2E21EB27-A175-1510-5651-A82FFDF4D35D</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<sourcePk>0FE9DCA0-0256-1E56-89BC-F4AA00A4989F</sourcePk>
+<dominantRole>2148A2EF-BDE5-1D9C-2A64-75FC3015DC66</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2148A2EF-BDE5-1D9C-2A64-75FC3015DC66</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>C983D6D4-FBF3-B0DB-04A8-A2D5BC4A7382</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

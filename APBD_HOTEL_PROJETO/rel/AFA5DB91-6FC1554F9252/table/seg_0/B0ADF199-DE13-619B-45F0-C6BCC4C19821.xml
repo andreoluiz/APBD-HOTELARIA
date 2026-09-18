@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_USUARIO_PERFIL</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -91,6 +92,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0B2366E0-1B27-866B-EA3C-9C94F1CC6EBB"/>
+<colUsage columnID="73DB54C6-7275-F54F-7050-F3C4B9C5E006"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21FFB66A-EA24-DD95-371A-754EECD755AD" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_USP_PERFIL">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>C90F9023-F0AE-EF6F-6D6F-C58E610FA635</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
 <colUsage columnID="73DB54C6-7275-F54F-7050-F3C4B9C5E006"/>
 </indexColumnUsage>
 </ind_PK_UK>

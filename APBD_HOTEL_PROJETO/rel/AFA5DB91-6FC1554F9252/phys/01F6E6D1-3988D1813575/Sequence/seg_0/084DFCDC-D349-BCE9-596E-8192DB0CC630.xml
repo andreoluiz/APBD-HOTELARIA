@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_COD_RESERVA" directorySegmentName="seg_0" id="084DFCDC-D349-BCE9-596E-8192DB0CC630">
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="seq_cod_reserva" directorySegmentName="seg_0" id="084DFCDC-D349-BCE9-596E-8192DB0CC630">
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>SEQ_COD_RESERVA</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:15 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -11,5 +12,6 @@
 <minValue>1</minValue>
 <noCache>YES</noCache>
 <order>YES</order>
+<startWith>1</startWith>
 <user>7A8B1D92-A869-040F-7EF5-5CA0C1ED529D</user>
 </SequenceOraclev10g>

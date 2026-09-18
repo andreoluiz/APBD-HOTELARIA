@@ -6,8 +6,6 @@
 <schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
@@ -72,12 +70,17 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
-<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <existingIndex>C0320C50-34C7-3646-089F-4EB3B188165E</existingIndex>
-<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>
 </primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_QUARTO_HOTEL_NUMERO" id="B9E5E895-B1C6-BBFA-913A-8EB4AC145042">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
 </TableProxyOraclev20c>

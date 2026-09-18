@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_RES_QUARTO" directorySegmentName="seg_0" id="FF3EE00D-88CF-2CA9-94E3-B2416C1B353A">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>0B4F4616-7BF2-29AE-C2B3-10D7A32C7E0A</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<sourcePk>A5A0BB55-11BE-0383-B9CE-B0DA24786976</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>70131FA1-FEA5-DF43-FEE2-0255D520489E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>01AED9D5-F841-1B7E-63F3-31738B5B0637</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

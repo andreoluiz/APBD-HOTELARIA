@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_AUDITORIA_ALTERACAO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -150,6 +151,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="EB6FE200-C405-8AEA-20D9-90D42030E401"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="526107CA-F1A9-DDBE-C494-DA6A368676AD" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_AUD_ALT_EVENTO">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>C124C604-6B1A-11F0-D9BA-3E2322015990</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFDB3595-2504-B067-82EE-209065E8AFF5"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C88FFD71-FC0F-BB8A-36DF-0D90CC5E7059" name="FK_AUD_ALT_EVENTO">

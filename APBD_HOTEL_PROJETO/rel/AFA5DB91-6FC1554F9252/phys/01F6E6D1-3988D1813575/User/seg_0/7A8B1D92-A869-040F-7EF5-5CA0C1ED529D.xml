@@ -2,8 +2,21 @@
 <UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HOTEL_GESTAO" directorySegmentName="seg_0" id="7A8B1D92-A869-040F-7EF5-5CA0C1ED529D">
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjName>HOTEL_GESTAO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:15 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
 <schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<defTableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</defTableSpace>
+<identifier>155B48A31D20B4FF1B8190D20819809B8D97E0C7F1335B1113E249B91A7BB71615</identifier>
+<privileges>CREATE SESSION, CREATE TABLE, CREATE SEQUENCE, CREATE TRIGGER, CREATE VIEW</privileges>
+<temptSGroupName>TEMP</temptSGroupName>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="8F1CF01E-95AE-5F5A-0FAE-DFC1A9163869">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</QuotaItem>
+</quotaItems>
 </UserOraclev10g>

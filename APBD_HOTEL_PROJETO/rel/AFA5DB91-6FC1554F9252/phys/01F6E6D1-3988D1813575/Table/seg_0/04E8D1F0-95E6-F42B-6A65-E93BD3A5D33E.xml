@@ -6,8 +6,6 @@
 <schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
@@ -87,12 +85,44 @@
 </ColumnProxy>
 </columnProxies>
 <indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_PRO_SETOR_HOTEL_STATUS" id="081B718A-A35A-941F-6F7F-928C0174C683">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging></logging>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_PRO_RESERVA" id="0C1CE70D-BDFD-6545-EFEF-7CFC108624F7">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging></logging>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_PRO_HOSPEDE" id="4ADA799B-11E3-4694-CA98-AB55D5C01B48">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging></logging>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
 <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_PROTOCOLO_PK" id="B05122DA-5847-867C-2228-D94EBE0C6A62">
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:17 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
 <schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
 <segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_PRO_RESPONSAVEL" id="BE08EAD4-EE97-D01D-B8E8-815CD7CA9683">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging></logging>
 <tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 </IndexProxy>
 <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_PROTOCOLO_HOTEL_NUMERO" id="FA50157A-B724-05C9-6E57-691DBFF775D5">
@@ -125,6 +155,11 @@
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
 </ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_SETOR_HOTEL" id="CC40471D-FD19-5019-7247-70F5992AA411">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+</ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TB_PROTOCOLO_TB_HOSPEDE_FK" id="E4A4B761-1004-B2CC-B076-EDBF348C4FC0">
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
@@ -136,10 +171,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
-<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <existingIndex>B05122DA-5847-867C-2228-D94EBE0C6A62</existingIndex>
-<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>
@@ -149,10 +181,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
-<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <existingIndex>FA50157A-B724-05C9-6E57-691DBFF775D5</existingIndex>
-<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </UniqueKey>

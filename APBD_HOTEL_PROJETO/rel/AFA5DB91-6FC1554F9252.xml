@@ -3,7 +3,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:30:25 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
+<shouldBeOpen>true</shouldBeOpen>
 <selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
 <importConnectionStamps>
 <importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
@@ -12,4 +12,11 @@
 <connType>1</connType>
 </importConnectionStamp>
 </importConnectionStamps>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>APBD_HOTEL.sql</fileName>
+<pathName>C:\Users\vivia\OneDrive\Documents\Oracle SQL Developer Data Modeler\mywork\APBD-HOTELARIA</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
 </relationalModel>

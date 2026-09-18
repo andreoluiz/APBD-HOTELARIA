@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="858C08AC-4A58-C061-CEF3-E1548893F735" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_HOSPEDAGEM">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>86FF670A-5738-F847-EF4A-DD35F7F4F937</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_HOSPEDAGEM" id="92F45630-C56E-BF26-FB5A-7E92636D25EE">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>A2A8D2C8-4883-719F-4308-0C7C4F8B2AC0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A590D48-6160-6078-E624-66F79BDDA47D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_hospedagem</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_HOSPEDAGEM_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_HPD_COD_HOSPEDAGEM</notNullConstraintName>
+</Column>
+<Column name="COD_RESERVA" id="D8DD1AB7-9592-D083-AF4A-4DB81850CE1D">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>92F523F6-F01B-FDA9-F1D7-7C938C2512E7</importedID>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_HPD_COD_RESERVA</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="BB2D6598-4164-7DA7-2CAF-2677A97ED9C6" referredColumn="5ACCC751-309E-6063-4C78-D97776CA496D"/>
+</associations>
+</Column>
+<Column name="DT_ENTRADA_EFETIVA" id="CE34007B-408B-08D5-6ACF-244AE73A0E34">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>38837F1E-DC45-733F-39B7-C00BDA0B4A24</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>83333E42-5E09-A364-B132-A43C88F7E488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_HPD_ENTRADA</notNullConstraintName>
+</Column>
+<Column name="DT_SAIDA_EFETIVA" id="7EEEF8C1-60D1-CD27-FBF2-94752F539971">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>8B119396-72DD-F9D5-4844-4D2D9FE64AF9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>83333E42-5E09-A364-B132-A43C88F7E488</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_SITUACAO" id="6C01344D-6AA2-4AE7-2364-4BCCA9DD7C8C">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>2271CACB-5EC0-40E1-B476-909A5A0115E2</importedID>
+<constraintName>CK_HOSPEDAGEM_SITUACAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B0AB7231-87CA-8849-5E33-750B6EEA82F1</domain>
+<listOfValues>
+<valueDef value="CONCLUIDA" description=""/>
+<valueDef value="EM_ANDAMENTO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_HPD_SITUACAO</notNullConstraintName>
+</Column>
+<Column name="TXT_OBSERVACAO" id="43ACC45B-3C2C-09C6-6B62-E55C655F9357">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>D1D94A48-AF26-5872-B486-E1191B853C39</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>50C9E712-71E1-B3C8-464D-68DC8D4DC3A3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="531D25DE-6CCD-EA83-580D-1CEC09966084" name="TB_HOSPEDAGEM_PK">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>6BF1F0AF-BC2F-02B9-8CF3-A8CD8F8D48E7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92F45630-C56E-BF26-FB5A-7E92636D25EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBDDCF6B-E2B9-B653-7304-C94656A0610F" name="UK_HOSPEDAGEM_RESERVA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>C5BB8ED4-8BFD-D7AE-438E-03E734EB1F70</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8DD1AB7-9592-D083-AF4A-4DB81850CE1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A91EC81D-ECE1-DFA7-FD73-2C954C9620E4" name="FK_HPD_RESERVA">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8DD1AB7-9592-D083-AF4A-4DB81850CE1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_HOSPEDAGEM_DATAS" directorySegmentName="seg_0" id="5DA2E7A4-5166-A153-2007-01CCB039735A">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>D9B1E1E3-3590-3ABA-0510-E16CE813B4B0</importedID>
+<rule><![CDATA[DT_SAIDA_EFETIVA IS NULL OR DT_SAIDA_EFETIVA >= DT_ENTRADA_EFETIVA]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

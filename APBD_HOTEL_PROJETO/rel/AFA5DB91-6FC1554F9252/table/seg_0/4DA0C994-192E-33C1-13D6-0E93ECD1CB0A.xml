@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_SETOR</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -158,6 +159,19 @@
 <indexColumnUsage>
 <colUsage columnID="C81EDE58-9250-551E-6B9E-4C8DB0BDAC6E"/>
 <colUsage columnID="4DEA47C9-9D71-ADD6-8365-27FBA558A3CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22E30D04-2192-AED1-9D28-64510DE8762E" name="UK_SETOR_COD_HOTEL">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>B7A5A481-4B1B-2F13-8B70-B8E092C1A4CF</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B257B96-3F4D-1AFC-3ECB-15366BC0D3F3"/>
+<colUsage columnID="C81EDE58-9250-551E-6B9E-4C8DB0BDAC6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="0729408E-316C-D000-7411-A1377B00AAD4" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="TB_SETOR_PK">

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_AUD_ALT_EVENTO" directorySegmentName="seg_0" id="D263E9B1-9697-5816-42D8-A6616A368748">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>6A2966B7-E5DB-AEA5-2B3F-CE4E343D6121</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<sourcePk>0FE9DCA0-0256-1E56-89BC-F4AA00A4989F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2148A2EF-BDE5-1D9C-2A64-75FC3015DC66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2B7F343A-50A6-A623-C2F3-512F3F0037B1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

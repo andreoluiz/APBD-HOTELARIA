@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_HOSPEDE</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -188,6 +189,15 @@
 <indexColumnUsage>
 <colUsage columnID="DC4EDDCA-F494-B2BB-4340-D31BD5CAF0FD"/>
 </indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC3E455B-4786-E9E6-D6F0-34DA3CDBB9D9" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_HOSPEDE_NOME_UPPER">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>A14DE328-87F7-9263-F8E1-1CA5E3F7BAED</importedID>
+<indexExpression>UPPER(NOM_HOSPEDE)</indexExpression>
+<isSurrogateKey>false</isSurrogateKey>
 </ind_PK_UK>
 </indexes>
 </Table>

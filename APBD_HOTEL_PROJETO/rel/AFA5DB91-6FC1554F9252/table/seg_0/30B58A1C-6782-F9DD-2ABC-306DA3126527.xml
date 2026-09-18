@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_AUDITORIA_EVENTO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -203,6 +204,53 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C1388291-9C02-2194-373E-89F653694BB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC331C9A-6A78-26EB-3F9E-F7AA3787016B" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_AUD_EVT_HOTEL_DATA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>3BE63722-FF41-116B-6C53-0B851E9164FC</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84F2D0F9-568A-40A8-3295-A37D93067E72"/>
+<colUsage columnID="D50348FA-FC95-A1B2-89E5-535CBAA3B1A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B779910-6EE9-A3FA-F44F-85EF0F94B0B7" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_AUD_EVT_USUARIO_DATA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>FC786CFE-ABF2-A1B8-14A9-0A885B293D50</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA0905B4-4349-3AAE-6EDB-4DB6433AE17A"/>
+<colUsage columnID="D50348FA-FC95-A1B2-89E5-535CBAA3B1A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03DC9338-084D-AFDB-DDF1-654949F16CC6" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_AUD_EVT_SETOR">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>AA57BF11-0301-F6B8-EC90-C468F6F09178</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3341A69E-665A-946A-A53F-274472651FC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6319CB7-74DE-9824-64B5-93B3B94D24EC" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_AUD_EVT_ENTIDADE">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>8611A398-0A70-70EB-0891-B493C1F2E56C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8386F4A-4434-DBA6-5438-FF3250B9D045"/>
+<colUsage columnID="D76F70F5-2D41-8F97-ABBA-3610386C767B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="98EC810B-9835-BC41-0498-425D1A71858E" name="FK_EVE_HOTEL">

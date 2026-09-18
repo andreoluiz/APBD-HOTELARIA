@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_MOVIMENTACAO_PROTOCOLO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -211,6 +212,62 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="343E7064-69D3-1B5B-6972-78CAF4726171"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="614244FB-44BB-75CE-CE66-E901C85987D0" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_MOV_PROTOCOLO_DATA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>87DE27EA-C07E-4FB6-5D7C-52B6C42DAFE5</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB698726-83EE-5615-65DA-F88C584BEDFA"/>
+<colUsage columnID="52E3771B-6041-0EB7-8EB0-D7D46E32CF67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="384D0E1C-F234-4E5B-5949-6E2A0CEEDE90" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_MOV_EXECUTOR">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>68EEDF1E-1F95-24BF-1D1A-C8130789EE29</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="725A40FA-7D45-6E5E-EC0F-D944F4C6365D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F89C4EA6-7E21-0A35-0E4D-BD6E958E0662" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_MOV_SETOR_ORIGEM">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>8E2310F2-A042-F65D-FBF7-3A71FCE7614E</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83BDD484-5697-A81D-AF04-A4505D815C5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9749253-8182-3596-57D4-55199AD19E75" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_MOV_SETOR_DESTINO">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>FDF244F4-0C74-FB90-412E-294AE7CDBD37</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEC88463-489D-162C-0048-6056F344B47C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3091C360-1C9B-0D12-5C48-7EAEF40B96A4" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_MOV_RESP_DESTINO">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>38228B79-3FBD-0D26-1C18-E0E195C02555</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07BD5952-CB8C-9021-8026-71278FFCB0EA"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="84CAAEBC-77D0-653A-A67E-40E8B237E9C0" name="FK_MOV_EXECUTOR">

@@ -6,8 +6,6 @@
 <schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>A40C46DE-E24D-925D-A3F4-011029234FA6</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
@@ -59,6 +57,14 @@
 <segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
 <tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 </IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IX_AUD_ALT_EVENTO" id="526107CA-F1A9-DDBE-C494-DA6A368676AD">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<schemaObject>CE925572-01F0-8127-E276-4D3C91B2222F</schemaObject>
+<logging></logging>
+<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
+</IndexProxy>
 </indexProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_AUD_ALT_EVENTO" id="C88FFD71-FC0F-BB8A-36DF-0D90CC5E7059">
@@ -72,10 +78,7 @@
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
-<segment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</segment>
-<tableSpace>6AC1FC88-2EF8-AA55-B5C2-1D24B55077AC</tableSpace>
 <existingIndex>51472BDC-1AC2-5644-582F-C935FD4F26C5</existingIndex>
-<indexSegment>1DB00AB9-4C0E-E03E-97B7-D8F0372717A5</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>

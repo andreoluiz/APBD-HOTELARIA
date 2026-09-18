@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_COD_HOSPEDAGEM" directorySegmentName="seg_0" id="F62D48D5-C70A-9AF3-D608-7DC56EB5AE05">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:45:43 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<noCache>YES</noCache>
+<order>YES</order>
+<startWith>1</startWith>
+<user>7A8B1D92-A869-040F-7EF5-5CA0C1ED529D</user>
+</SequenceOraclev10g>

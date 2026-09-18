@@ -3,6 +3,7 @@
 <sourceConnName>PROJETO_APBD</sourceConnName>
 <sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
 <sourceObjName>TB_PROTOCOLO</sourceObjName>
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:16 UTC</createdTime>
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
@@ -46,6 +47,7 @@
 <notNullConstraintName>NN_PRO_COD_HOTEL</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="9DD5D5B0-040B-EC8C-9CBD-E29989752918" referredColumn="96E9201D-9A6C-5993-1894-5600A96A767C"/>
+<colAssociation fkAssociation="B08F219D-3C02-5A90-8D2F-F5844A29A287" referredColumn="C81EDE58-9250-551E-6B9E-4C8DB0BDAC6E"/>
 </associations>
 </Column>
 <Column name="COD_HOSPEDE" id="03F67EDD-09EA-C18D-EC1F-78008E889551">
@@ -260,6 +262,7 @@
 <notNullConstraintName>NN_COD_SETOR_ATUAL</notNullConstraintName>
 <associations>
 <colAssociation fkAssociation="4866C1D9-10C7-F9B6-099F-9DF34D52E5E2" referredColumn="5B257B96-3F4D-1AFC-3ECB-15366BC0D3F3"/>
+<colAssociation fkAssociation="B08F219D-3C02-5A90-8D2F-F5844A29A287" referredColumn="5B257B96-3F4D-1AFC-3ECB-15366BC0D3F3"/>
 </associations>
 </Column>
 </columns>
@@ -319,6 +322,52 @@
 <colUsage columnID="57F50133-2EA7-F57A-3640-BE5A5015B7B7"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="081B718A-A35A-941F-6F7F-928C0174C683" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_PRO_SETOR_HOTEL_STATUS">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>6E037376-DC57-90BB-4D37-FA5E6F69D679</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF64A8EB-5DA9-FAB0-24CB-1D2D56F9CAF7"/>
+<colUsage columnID="1155F415-1C01-5B0A-0D78-6AB18ECD3C2E"/>
+<colUsage columnID="C6D8CA92-9487-E50B-E39B-C1ED9A7CF144"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4ADA799B-11E3-4694-CA98-AB55D5C01B48" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_PRO_HOSPEDE">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>545C4A84-FECE-5651-639F-E9F13105558C</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03F67EDD-09EA-C18D-EC1F-78008E889551"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C1CE70D-BDFD-6545-EFEF-7CFC108624F7" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_PRO_RESERVA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>F18AB7D3-601D-CE29-CBF3-40D4FA91EAAA</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66512609-E558-CA4C-966A-B65D67C4F409"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE08EAD4-EE97-D01D-B8E8-815CD7CA9683" schemaObject="CE925572-01F0-8127-E276-4D3C91B2222F" name="IX_PRO_RESPONSAVEL">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>78F84255-B4BB-59A2-2A7B-F261B92276C8</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7371B861-7F9D-0D30-3FD1-1794D3D91357"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="A77C427F-1CCC-7B48-B13C-14532FBA04D7" name="FK_PRO_HOTEL">
 <createdBy>andre</createdBy>
 <createdTime>2026-09-17 23:35:18 UTC</createdTime>
@@ -367,6 +416,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="03F67EDD-09EA-C18D-EC1F-78008E889551"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC40471D-FD19-5019-7247-70F5992AA411" name="FK_PRO_SETOR_HOTEL">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF64A8EB-5DA9-FAB0-24CB-1D2D56F9CAF7"/>
+<colUsage columnID="1155F415-1C01-5B0A-0D78-6AB18ECD3C2E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_PROTOCOLO_TB_HOSPEDE_FK" directorySegmentName="seg_0" id="37387964-ADC3-8732-3D8A-9F6DB16F2488">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>8F2AF87B-77B1-9081-CE8B-645BB6E1BA25</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<sourcePk>5821F70B-2415-0F20-F4A6-E19A102194A5</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8065D549-F4BB-D020-E64F-B901386BDCB7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7A730DBC-AC8D-A9F0-867A-F32BC5C47724</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,462 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="F2B73978-B533-9AD9-5613-FF7C4EC6AA0A" name="VW AUDITORIA DETALHADA">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>3AA7C048-F7AA-1CE2-6AC8-440C1099E099</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_AUDITORIA_DETALHADA
+AS 
+SELECT HOTEL_GESTAO.TB_USUARIO.COD_USUARIO AS COD_USUARIO,
+  HOTEL_GESTAO.TB_HOTEL.COD_HOTEL AS COD_HOTEL,
+  HOTEL_GESTAO.TB_SETOR.COD_SETOR,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_AUDITORIA_EVENTO,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.NUM_IP,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.DSC_EVENTO,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_ENTIDADE,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.NOM_ENTIDADE,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.DSC_OPERACAO,
+  HOTEL_GESTAO.TB_USUARIO.NOM_USUARIO,
+  HOTEL_GESTAO.TB_HOTEL.NOM_HOTEL,
+  HOTEL_GESTAO.TB_SETOR.NOM_SETOR,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.COD_AUDITORIA_ALTERACAO,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.NOM_TABELA,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.COD_REGISTRO,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.NOM_CAMPO,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.DSC_VALOR_ANTERIOR,
+  HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.DSC_VALOR_NOVO,
+  HOTEL_GESTAO.TB_AUDITORIA_EVENTO.DT_EVENTO
+FROM HOTEL_GESTAO.TB_AUDITORIA_EVENTO
+  LEFT JOIN HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO ON HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_AUDITORIA_EVENTO =
+    HOTEL_GESTAO.TB_AUDITORIA_ALTERACAO.COD_AUDITORIA_EVENTO
+  LEFT JOIN HOTEL_GESTAO.TB_USUARIO
+    ON HOTEL_GESTAO.TB_USUARIO.COD_USUARIO = HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_USUARIO
+  LEFT JOIN HOTEL_GESTAO.TB_HOTEL ON HOTEL_GESTAO.TB_HOTEL.COD_HOTEL = HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_HOTEL
+  LEFT JOIN HOTEL_GESTAO.TB_SETOR ON HOTEL_GESTAO.TB_SETOR.COD_SETOR = HOTEL_GESTAO.TB_AUDITORIA_EVENTO.COD_SETOR]]></userDefinedSQL>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_USUARIO" id="A53992D4-5954-0546-01A4-96DA212208B8">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>93C1CDC2-357A-C289-0966-6D88DECACD81</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_USUARIO</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<referencedColumn>99ABDAFB-5064-8397-BCE8-F6DDAB848143</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_HOTEL" id="E1BEE4EC-4B7B-31DE-6E29-346B3F67061C">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>100E000E-BCE8-7F52-BB5E-BC11C377AE63</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_HOTEL</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<referencedColumn>1A759F70-5276-E7DD-17C9-E494A3221633</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_SETOR" id="93DAB5B1-C974-C434-268D-D63BFC6BEB0D">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>FE6010DF-942C-37B8-310A-0B326DDDC298</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_SETOR</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<referencedColumn>225F6B0D-E579-8C64-86F0-C2C710AAFD7E</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_AUDITORIA_EVENTO" id="DD9C50E7-8568-C2F9-EC1F-ECCAEF4E1DE2">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>EDA1B0DD-9F58-CA37-CF68-0D95214B2762</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_AUDITORIA_EVENTO</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<referencedColumn>D58F9190-7B34-0FD2-97ED-769D63C17383</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NUM_IP" id="B7115FB9-1C26-3E0E-A04B-6CD42801ADA8">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>D3736A70-D687-C762-255E-618A34B0A56F</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NUM_IP</alias>
+<dataType>VARCHAR2 (45 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>D7206F05-4A8A-BFC5-A66C-163C5920AABA</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DSC_EVENTO" id="F0A9F3AF-2AE2-B873-FD7F-09E0066A1180">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>85678EF0-092D-F56D-BF40-D63A4E50AC3B</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_EVENTO</alias>
+<dataType>VARCHAR2 (1000 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>2857A0F4-5B48-CAEF-22A3-F7DD141B1C56</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_ENTIDADE" id="A6EFE197-949F-135D-C448-AD31D32DF586">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>87A29718-9DFE-305B-B0AE-2559B5ED5E10</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_ENTIDADE</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>CA05A3C9-AAC5-6DB4-B7F4-6C5C49C7CC95</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_ENTIDADE" id="70381D24-AABE-288D-BDF1-B4C049933341">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>A51D06B4-6D66-6450-D2F1-98E54FA81FD4</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_ENTIDADE</alias>
+<dataType>VARCHAR2 (100 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>B0FD7BF0-351F-C629-7702-D009BA5C49B3</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DSC_OPERACAO" id="6465187B-1E98-B00C-7A66-38FA3339A01E">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>0943D380-1160-5B14-8D34-619F28BB2E5E</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_OPERACAO</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>ABDBE03A-CB94-8C37-427C-B473536805FC</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_USUARIO" id="032B8200-31E2-470D-91C0-0C2194EAA0C2">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>C01C0811-D1DE-2B81-D3BF-00928590FFEB</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_USUARIO</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>7D69F744-F2F4-7C55-5373-B693D5AF18C3</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_HOTEL" id="5A1A6FAE-C6E7-DA0D-56B6-559A3C33C8EC">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>75F7113C-23B1-DE03-AE05-1C02BF0AA942</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_HOTEL</alias>
+<dataType>VARCHAR2 (300 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>E2FF9263-2615-FAE6-AED9-96732AA52EB2</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_SETOR" id="A8188C00-AB64-C663-AD9E-B9B187C531DB">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>EB8CF3C9-079D-37BB-F520-EFA8C9F40F58</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_SETOR</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>EB37BDEA-508A-C8C7-019D-B9FA79C49F6F</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_AUDITORIA_ALTERACAO" id="EA1B7E1D-519F-CE0E-AE25-32C03FC63AA9">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>8B990F00-C4B4-97A6-951F-1506E3B26B08</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_AUDITORIA_ALTERACAO</alias>
+<dataType>NUMBER (19)</dataType>
+<reference>false</reference>
+<referencedColumn>BDF20168-9413-ED03-C448-83D748D80461</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_TABELA" id="DD4EC7C6-B5E4-9F97-49D0-3A1879AA5957">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>96280F33-1BEC-4E71-A0F7-C9C8F6814DFC</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_TABELA</alias>
+<dataType>VARCHAR2 (100 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>05ADD0E4-72B7-E2A7-35BC-A2E8A69D3291</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="COD_REGISTRO" id="F4256572-35EB-9958-6BAF-56A1955777A7">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>AB692018-3343-F2F6-5AB6-E3DA32404B80</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_REGISTRO</alias>
+<dataType>VARCHAR2 (100 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>97C9554C-D492-75A4-C79D-9E3DD14F7F0F</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="NOM_CAMPO" id="C5904148-8494-4288-CF2C-99936A538A95">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>43A1888E-B303-FA9E-4B1D-2655D63463BA</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_CAMPO</alias>
+<dataType>VARCHAR2 (100 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>417F5913-5109-A82B-C9BA-B453CF3E30A9</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DSC_VALOR_ANTERIOR" id="FE87C5A2-D95A-8B3F-1BB0-7DA28A1A7966">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>00B24B50-7501-9B6F-3933-8F83F8A04D64</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_VALOR_ANTERIOR</alias>
+<dataType>VARCHAR2 (4000 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>06714A16-1494-390D-D428-EFC52A79F582</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DSC_VALOR_NOVO" id="8AAFD956-431A-F66B-FE45-2BBE86A018CC">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>72997DFF-24E4-C898-270E-983879A54F1B</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_VALOR_NOVO</alias>
+<dataType>VARCHAR2 (4000 BYTE)</dataType>
+<reference>false</reference>
+<referencedColumn>89482AC1-CEEE-E53B-D278-E744D995A438</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DT_EVENTO" id="988B6B0A-3E80-795D-EC31-4ADA0F174DFE">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>639B8FB9-8A72-5856-27DD-D409865A77AC</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_EVENTO</alias>
+<dataType>TIMESTAMP</dataType>
+<reference>false</reference>
+<referencedColumn>E5DDAE5D-DA1A-96B4-1359-9A302AC981E6</referencedColumn>
+<viewID>F2B73978-B533-9AD9-5613-FF7C4EC6AA0A</viewID>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2148A2EF-BDE5-1D9C-2A64-75FC3015DC66">
+<container>true</container>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2B7F343A-50A6-A623-C2F3-512F3F0037B1">
+<container>true</container>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="724F71B2-DD71-62F6-7BB8-9B7D4CB208D7">
+<container>true</container>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7C453CFD-7067-15A0-32BA-B09E62FA62BD">
+<container>true</container>
+<tableName>TB_HOTEL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="81098524-BB45-1B02-3937-36F2ED859192">
+<container>true</container>
+<tableName>TB_SETOR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="99ABDAFB-5064-8397-BCE8-F6DDAB848143">
+<columnName>COD_USUARIO</columnName>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1A759F70-5276-E7DD-17C9-E494A3221633">
+<columnName>COD_HOTEL</columnName>
+<tableName>TB_HOTEL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="225F6B0D-E579-8C64-86F0-C2C710AAFD7E">
+<columnName>COD_SETOR</columnName>
+<tableName>TB_SETOR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D58F9190-7B34-0FD2-97ED-769D63C17383">
+<columnName>COD_AUDITORIA_EVENTO</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D7206F05-4A8A-BFC5-A66C-163C5920AABA">
+<columnName>NUM_IP</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2857A0F4-5B48-CAEF-22A3-F7DD141B1C56">
+<columnName>DSC_EVENTO</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CA05A3C9-AAC5-6DB4-B7F4-6C5C49C7CC95">
+<columnName>COD_ENTIDADE</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B0FD7BF0-351F-C629-7702-D009BA5C49B3">
+<columnName>NOM_ENTIDADE</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ABDBE03A-CB94-8C37-427C-B473536805FC">
+<columnName>DSC_OPERACAO</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7D69F744-F2F4-7C55-5373-B693D5AF18C3">
+<columnName>NOM_USUARIO</columnName>
+<tableName>TB_USUARIO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E2FF9263-2615-FAE6-AED9-96732AA52EB2">
+<columnName>NOM_HOTEL</columnName>
+<tableName>TB_HOTEL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EB37BDEA-508A-C8C7-019D-B9FA79C49F6F">
+<columnName>NOM_SETOR</columnName>
+<tableName>TB_SETOR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BDF20168-9413-ED03-C448-83D748D80461">
+<columnName>COD_AUDITORIA_ALTERACAO</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="05ADD0E4-72B7-E2A7-35BC-A2E8A69D3291">
+<columnName>NOM_TABELA</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="97C9554C-D492-75A4-C79D-9E3DD14F7F0F">
+<columnName>COD_REGISTRO</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="417F5913-5109-A82B-C9BA-B453CF3E30A9">
+<columnName>NOM_CAMPO</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="06714A16-1494-390D-D428-EFC52A79F582">
+<columnName>DSC_VALOR_ANTERIOR</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="89482AC1-CEEE-E53B-D278-E744D995A438">
+<columnName>DSC_VALOR_NOVO</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E5DDAE5D-DA1A-96B4-1359-9A302AC981E6">
+<columnName>DT_EVENTO</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D05FAB8F-237A-465C-4005-092671578603">
+<columnName>COD_HOTEL</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="69C36685-E56B-DF2C-6D6D-8809E1BBD368">
+<columnName>COD_SETOR</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D2199B1A-46C9-7912-BA07-72EC52D4E748">
+<columnName>COD_AUDITORIA_EVENTO</columnName>
+<tableName>TB_AUDITORIA_ALTERACAO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="580A3B4D-970E-6058-3B41-BEF75B753EF9">
+<columnName>COD_USUARIO</columnName>
+<tableName>TB_AUDITORIA_EVENTO</tableName>
+</UsedObject>
+</usedObjects>
+</EntityView>

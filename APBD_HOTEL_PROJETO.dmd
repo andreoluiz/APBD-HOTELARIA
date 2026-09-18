@@ -5,4 +5,9 @@
 <ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>65DEAAC3-7259-441B-A608-22C328D36EFE</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="02CE0E98-D595-1984-EC60-7CE2A9F3295A">
+<designStoragePath>C:\APBD_HOTEL</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

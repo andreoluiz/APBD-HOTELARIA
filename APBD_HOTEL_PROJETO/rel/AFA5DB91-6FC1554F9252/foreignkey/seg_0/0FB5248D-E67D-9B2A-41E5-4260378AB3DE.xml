@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0FB5248D-E67D-9B2A-41E5-4260378AB3DE" containerWithKeyObject="37B436F7-D9DD-3EEE-B426-A1E6A5740F0A" localFKIndex="6D565C55-DC2E-0AC8-44CE-CF779D7B804F" name="FK_FUNCIONARIO_CARGO">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>106A868A-A23F-5AA2-70B1-E5C9FB38AD73</importedID>
+<referredTableLongName>HOTEL_GESTAO.TB_CARGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>139A1A7E-F261-F661-1D72-6410E1E01C8E</referredTableID>
+<keyObject>046E5463-EC6D-E206-1F2A-A55A9E751D32</keyObject>
+<referredKeyID>046E5463-EC6D-E206-1F2A-A55A9E751D32</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_CARGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

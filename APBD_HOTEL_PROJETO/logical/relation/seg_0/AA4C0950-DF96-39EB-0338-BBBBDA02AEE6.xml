@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MOV_SETOR_ORIGEM" directorySegmentName="seg_0" id="AA4C0950-DF96-39EB-0338-BBBBDA02AEE6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:54:03 UTC</createdTime>
+<generatorID>2D7B00F9-40F4-3861-95E5-FE0F53F799E8</generatorID>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<engineerTo>
+<item key="AFA5DB91-17E2-3F58-17A8-6FC1554F9252" value="true"/>
+</engineerTo>
+<sourcePk>56466908-CE61-40DF-CBD8-060824FF7F9F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>81098524-BB45-1B02-3937-36F2ED859192</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF6DE91C-C712-BDB4-48CC-CC7FDB0DAF4F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

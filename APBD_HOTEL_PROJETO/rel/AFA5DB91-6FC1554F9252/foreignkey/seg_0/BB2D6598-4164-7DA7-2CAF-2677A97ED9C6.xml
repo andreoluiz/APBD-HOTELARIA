@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BB2D6598-4164-7DA7-2CAF-2677A97ED9C6" containerWithKeyObject="858C08AC-4A58-C061-CEF3-E1548893F735" localFKIndex="A91EC81D-ECE1-DFA7-FD73-2C954C9620E4" name="FK_HPD_RESERVA">
+<sourceDDLFile>APBD_HOTEL.sql</sourceDDLFile>
+<createdBy>vivia</createdBy>
+<createdTime>2026-09-18 05:50:07 UTC</createdTime>
+<ownerDesignName>APBD_HOTEL_PROJETO</ownerDesignName>
+<importedID>A57A2323-817E-1B32-4051-068FD7160A19</importedID>
+<referredTableLongName>HOTEL_GESTAO.TB_RESERVA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EE8BD111-ED13-F5B7-E021-F592C410893C</referredTableID>
+<keyObject>0234AE89-DA65-D0FC-AF3E-34F0D9BD43D9</keyObject>
+<referredKeyID>0234AE89-DA65-D0FC-AF3E-34F0D9BD43D9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_RESERVA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
