@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A94CAA43-5ED2-A033-EBA4-97BC042C5F53" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_CARGO">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:41:58 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CARGO" id="F3D9AC29-D360-66D8-5CEE-CE7E997F3C8D">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:42:53 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOM_CARGO" id="71CA8FC1-1775-4CDE-E854-304D918D026F">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:43:18 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_CARGO" id="23883A71-759A-EEBB-B60A-AF01C41A6857">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:44:42 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IND_ATIVO" id="1DAE0026-9AD6-4034-0299-94086CF6F1B6">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:46:02 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<constraintName>CK_CARGO_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description="INATIVO"/>
+<valueDef value="1" description="ATIVO"/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CRIACAO" id="6CB7F154-929F-C88F-62BE-4B811F931526">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:46:34 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="319AFCF2-798D-6448-8C58-9D856436559B" name="TB_CARGO_PK">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:42:53 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3D9AC29-D360-66D8-5CEE-CE7E997F3C8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A3E4680-468B-A955-22FE-72A6DE805388" name="TB_CARGO__UN">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:43:38 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71CA8FC1-1775-4CDE-E854-304D918D026F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3AAF5219-3ACD-9B2C-AD2F-42EC35373E9A" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_SETOR">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_SETOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>4DA0C994-192E-33C1-13D6-0E93ECD1CB0A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_SETOR" id="944D727E-A9F5-8863-FC05-8D17E4FAE8DD">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>COD_SETOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>5B257B96-3F4D-1AFC-3ECB-15366BC0D3F3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_setor</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_SETOR_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_COD_SETOR</notNullConstraintName>
+</Column>
+<Column name="COD_HOTEL" id="855FC5DA-7E0F-DF9D-7B2E-C190C42DD41F">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>COD_HOTEL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>C81EDE58-9250-551E-6B9E-4C8DB0BDAC6E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_SET_COD_HOTEL</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="3EFEDE75-53DE-C869-6F19-45094F167BC1" referredColumn="29F433EC-29F2-9EA3-2645-006ADBCCA45C"/>
+</associations>
+</Column>
+<Column name="NOM_SETOR" id="FF4FE5BB-0F9E-1D6F-AF53-C0BB13DBBDF7">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>NOM_SETOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>4DEA47C9-9D71-ADD6-8365-27FBA558A3CA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_SETOR</notNullConstraintName>
+</Column>
+<Column name="SIG_SETOR" id="A8AEC67B-541C-7C74-25B8-5533CDA7FD46">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>SIG_SETOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>36A1AFCC-EF81-ACB4-5F6D-ACCBF4FE34BB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_SETOR" id="8454445B-E51B-ECF8-C207-D8D8FCBE6B11">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>DSC_SETOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>7A811383-905D-B940-B320-5185CC47DE47</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IND_ATIVO" id="5433B70A-F05B-B606-6A01-2FCD3ABAAA06">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>IND_ATIVO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>65AE532B-65FC-9DAD-CEC9-7268620E886A</importedID>
+<constraintName>CK_SETOR_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_SET_ATIVO</notNullConstraintName>
+</Column>
+<Column name="DT_CRIACAO" id="984F3558-E120-BB41-5404-C6146154C058">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_SETOR</sourceObjSchema>
+<sourceObjName>DT_CRIACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>3D966459-93E8-0BDA-023C-1A37FE19805E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_SET_CRIACAO</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D84A1271-7030-9732-E26F-4198CC5C9F8B" name="TB_SETOR_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_SETOR_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>D858581A-10E0-92DD-BDE8-35579BC15104</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="944D727E-A9F5-8863-FC05-8D17E4FAE8DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB5B9050-445A-5F62-7806-F25B4D85B85F" name="UK_SETOR_HOTEL_NOME">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_SETOR_HOTEL_NOME</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>94B6844A-6F5C-F0A8-7746-54B9160E70CA</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="855FC5DA-7E0F-DF9D-7B2E-C190C42DD41F"/>
+<colUsage columnID="FF4FE5BB-0F9E-1D6F-AF53-C0BB13DBBDF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90FD740C-A842-5C19-5EE5-3DA2CE6D35A5" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_SETOR_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_SETOR_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>0729408E-316C-D000-7411-A1377B00AAD4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="944D727E-A9F5-8863-FC05-8D17E4FAE8DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="710981B3-519D-CF76-8FBA-A43821DD9C29" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="UK_SETOR_HOTEL_NOME">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_SETOR_HOTEL_NOME</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>8B0AA899-99CF-C856-A54B-0A855BCFC07C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="855FC5DA-7E0F-DF9D-7B2E-C190C42DD41F"/>
+<colUsage columnID="FF4FE5BB-0F9E-1D6F-AF53-C0BB13DBBDF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F06B19B-168C-356E-1E60-3C8151410204" name="FK_SET_HOTEL">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="855FC5DA-7E0F-DF9D-7B2E-C190C42DD41F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

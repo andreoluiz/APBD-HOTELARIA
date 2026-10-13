@@ -1,0 +1,278 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F61131C-D918-BD6A-93B1-00528DC983A0" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_USUARIO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_USUARIO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>E0DCD356-5AFA-B92B-91D5-67942A40B18C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_USUARIO" id="04C35973-AF60-D2CE-6CC5-8279EEC298F9">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>COD_USUARIO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>F4727860-FE84-2BC4-9755-B02769DA17C6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_usuario</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_USUARIO_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_USU_COD_USUARIO</notNullConstraintName>
+</Column>
+<Column name="NOM_USUARIO" id="02A790B8-7493-42E4-BD6B-88D23C6EEC16">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>NOM_USUARIO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>EBAC92DD-5912-01ED-B185-9576545694DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_USUARIO</notNullConstraintName>
+</Column>
+<Column name="DSC_EMAIL" id="7B319C46-BA8C-47A3-E1F5-D304E6EB333F">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DSC_EMAIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>49866B48-0EE4-2637-3B07-FFB405CD0801</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DSC_EMAIL</notNullConstraintName>
+</Column>
+<Column name="DSC_SENHA_HASH" id="D0D2544D-C51A-6F6D-D3AC-F776B5D007F6">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DSC_SENHA_HASH</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>BD0D805A-CAC6-D14F-46CA-E3B70D6E309D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DSC_SENHA_HASH</notNullConstraintName>
+</Column>
+<Column name="DSC_SITUACAO" id="4286E953-9354-9362-BD2B-D4FE1DDA2180">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DSC_SITUACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>FC9853B0-963D-E413-B045-8B5A524A4D2A</importedID>
+<constraintName>CK_USUARIO_SITUACAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;ATIVO&apos;" description=""/>
+<valueDef value="&apos;BLOQUEADO&apos;" description=""/>
+<valueDef value="&apos;INATIVO&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;ATIVO&apos;</defaultValue>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USU_SITUACAO</notNullConstraintName>
+</Column>
+<Column name="DT_CRIACAO" id="2BDF7DAB-4250-CAD5-52F6-BDEF8B12E422">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DT_CRIACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>6FF4EA1B-B881-73FB-214D-F36F759B33EE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USU_CRIACAO</notNullConstraintName>
+</Column>
+<Column name="DT_ATUALIZACAO" id="8F4F2C6B-FED9-5066-BE5C-61EC8E1E9000">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DT_ATUALIZACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>2D2F0AD6-42B4-9986-6F78-0B09D2E7349A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMO_LOGIN" id="65E87946-BF5E-4715-1227-DE4B3EDBC119">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_USUARIO</sourceObjSchema>
+<sourceObjName>DT_ULTIMO_LOGIN</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>F784DE2D-D93D-BCF6-3F38-3037950F5F46</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_USUARIO" id="2B3B71D3-EC47-5AB5-EF67-910FF67F6913">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:25:49 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description="CLIENTE"/>
+<valueDef value="F" description="FUNCIONARIO"/>
+</listOfValues>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TB_CLIENTE_COD_USUARIO" id="B948198A-C925-070E-0F4F-7A0B6C6D31C7">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:34:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D48FCA86-80F0-64FF-D0F1-A2B51278B321" referredColumn="9F2777F4-3B05-C704-8EE2-550AE13D098F"/>
+</associations>
+</Column>
+<Column name="TB_FUNCIONARIO_COD_USUARIO" id="0FC244D9-7278-E241-5FC3-6F8D3E779385">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:51:51 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D9E8942-F6E8-650B-F4F9-0858D3B08155" referredColumn="457D1901-B47E-CB56-52B8-FCC0CB55EA31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBA9850E-7D1B-22E7-2316-424606289E9F" name="TB_USUARIO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_USUARIO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>E47B6232-0173-51EE-C651-9F27B50A3AE3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04C35973-AF60-D2CE-6CC5-8279EEC298F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="509FCDC1-D6FD-5CA1-C8EA-2B29A7D08ED3" name="UK_USUARIO_EMAIL">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_USUARIO_EMAIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>E897106D-96C8-0DC0-949E-58A1D1121A9F</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B319C46-BA8C-47A3-E1F5-D304E6EB333F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C63999F4-48E8-4675-3E43-BB9AF3D36D13" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_USUARIO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_USUARIO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>C23B9488-ABCA-D67A-380B-1E79BB728FC1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04C35973-AF60-D2CE-6CC5-8279EEC298F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2EE0FB4-D3AA-072B-C246-CDA754D9CB7E" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="UK_USUARIO_EMAIL">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_USUARIO_EMAIL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<importedID>04D6C1F3-75F9-EA29-F8B3-86E232035220</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B319C46-BA8C-47A3-E1F5-D304E6EB333F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A926C63-1889-A2BA-C5E0-A93F2B04F359" name="TB_USUARIO_TB_CLIENTE_FK">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:34:16 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B948198A-C925-070E-0F4F-7A0B6C6D31C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B519981-2201-CCC8-BF4D-1754E2EBFAA5" name="TB_USUARIO_TB_FUNCIONARIO_FK">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:51:51 UTC</createdTime>
+<ownerDesignName>APBD_HOTELARIA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FC244D9-7278-E241-5FC3-6F8D3E779385"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
