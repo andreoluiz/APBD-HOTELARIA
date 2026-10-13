@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_CARGO" directorySegmentName="seg_0" id="A94CAA43-5ED2-A033-EBA4-97BC042C5F53">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="IND_ATIVO" id="1DAE0026-9AD6-4034-0299-94086CF6F1B6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="DSC_CARGO" id="23883A71-759A-EEBB-B60A-AF01C41A6857">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_CRIACAO" id="6CB7F154-929F-C88F-62BE-4B811F931526">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM_CARGO" id="71CA8FC1-1775-4CDE-E854-304D918D026F">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_CARGO" id="F3D9AC29-D360-66D8-5CEE-CE7E997F3C8D">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_CARGO_PK" id="319AFCF2-798D-6448-8C58-9D856436559B">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="TB_CARGO__UN" id="9A3E4680-468B-A955-22FE-72A6DE805388">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

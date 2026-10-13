@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_HOSPEDE" directorySegmentName="seg_0" id="2B8435A6-9D85-FA36-26A1-88023FD749A5">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_NASCIMENTO" id="002A5C50-0971-2956-565E-060036E25307">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_CRIACAO" id="11CD4A04-F9A9-C265-6903-3318B76B6981">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_DOCUMENTO" id="439EAD11-8377-FF87-CB99-3B5564FD3BAC">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_TELEFONE" id="67683B75-5DCB-C9A7-2BAF-2D49470BAE52">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_HOSPEDE" id="AA90BCA2-C0E7-7E31-1EF8-D1DD2A9CFA4F">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_ATUALIZACAO" id="C6F146EC-1F23-1AF6-DE73-0852ACEC2056">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_EMAIL" id="CF3E30E0-847E-ABB7-3655-69859220BC58">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM_HOSPEDE" id="E0CDCB44-E98C-9CF2-BE71-94DBEA1AB6F9">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UK_HOSPEDE_DOCUMENTO" id="8B66797B-D096-520C-2484-ADDA883A6FA1">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_HOSPEDE_PK" id="DA3D4BB2-9A01-3093-C191-CDC3E936A92B">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_HOSPEDE_PK" id="725558DF-CC61-990E-56F9-0D5C827C2369">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_HOSPEDE_DOCUMENTO" id="EF05B1F6-E9CC-D10F-1DFE-EB8BAF276513">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

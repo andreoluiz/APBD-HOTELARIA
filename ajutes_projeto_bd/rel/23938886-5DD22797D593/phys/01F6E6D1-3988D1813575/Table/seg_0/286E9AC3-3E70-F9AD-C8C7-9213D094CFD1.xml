@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_MOVIMENTACAO_PROTOCOLO" directorySegmentName="seg_0" id="286E9AC3-3E70-F9AD-C8C7-9213D094CFD1">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DSC_STATUS_ANTERIOR" id="1F4066AD-BEC9-51B6-1419-6E621F02596C">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_MOVIMENTACAO" id="4985D1B8-23B7-B22D-3EEA-57D12582221B">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TXT_OBSERVACAO" id="4B11C2DE-410E-2CE8-835B-422ADBBAAC17">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_SETOR_ORIGEM" id="858B82EF-0C1C-0923-75C0-7496A5F4B148">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_STATUS_NOVO" id="86D2078B-1418-2567-27AB-98FD3B65DFD5">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_EXECUTOR" id="90DEC442-2E73-67E1-6609-296EBB96C7DB">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_MOVIMENTACAO" id="B1929D67-4BDE-AB97-3948-8015A6685D80">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_RESPONSAVEL_DESTINO" id="B78891A3-2282-FBF2-BADF-62B2D3CBB7C2">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_SETOR_DESTINO" id="DD14DAEA-E9BE-3ADA-2050-58689C2FBA26">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_PROTOCOLO" id="FC60D9B4-258D-673E-2708-D91B96960AAF">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_MOVIMENTACAO_PROTOCOLO_PK" id="D4ECA525-578D-70FA-67F6-D756CCFB037D">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MOV_SETOR_ORIGEM" id="0499DE0B-2032-6EEE-98D2-4C9BA88449C6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MOV_RESP_DESTINO" id="32931797-C611-D2D7-928B-453A66DF1E31">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MOV_EXECUTOR" id="402516FC-398C-67C0-EBB4-DA7D24255FC1">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MOV_SETOR_DESTINO" id="90CB8B23-6582-EBF2-B8E5-7EE667410891">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MOV_PROTOCOLO" id="A7D0DF47-E04F-8915-D747-DCB70781EAAE">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_MOVIMENTACAO_PROTOCOLO_PK" id="FBB5B292-302B-1F29-EF9D-896FA7486F8A">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

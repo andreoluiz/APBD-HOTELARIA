@@ -1,0 +1,305 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A48AC624-347A-2FC5-EE07-5E52C6B9B3B9" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_RESERVA">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_RESERVA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>EE8BD111-ED13-F5B7-E021-F592C410893C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_RESERVA" id="9870DA31-52E5-A854-DC6D-40D8C6BDF256">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>COD_RESERVA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>5ACCC751-309E-6063-4C78-D97776CA496D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<ownDataTypeParameters>,19,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_reserva</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_RESERVA_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_COD_RESERVA</notNullConstraintName>
+</Column>
+<Column name="COD_HOTEL" id="77C5E884-BD4D-0E54-1D89-D579E3A44EDD">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>COD_HOTEL</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>3FAE3631-6B98-3AC8-F8F4-5EDC40103949</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_RES_COD_HOTEL</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="874B5A38-1710-BA80-FDC7-B72B37170AA6" referredColumn="29F433EC-29F2-9EA3-2645-006ADBCCA45C"/>
+</associations>
+</Column>
+<Column name="COD_HOSPEDE" id="12D1C3E4-36A2-48A4-CF9C-0B67F66477AB">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>COD_HOSPEDE</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>5B9E8529-0963-7866-9A0D-C7E205396642</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_RES_COD_HOSPEDE</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="CA719ECD-8D0A-E29B-EF84-08BFD1B0F7F7" referredColumn="AA90BCA2-C0E7-7E31-1EF8-D1DD2A9CFA4F"/>
+</associations>
+</Column>
+<Column name="COD_QUARTO" id="5F7F03F1-9938-1927-4DF0-CD0D248A2247">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>COD_QUARTO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>40F37D4A-7063-F90D-444C-5CA37F1D6767</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_RES_COD_QUARTO</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C9F5F96B-C26D-695D-573E-5282CFBBE888" referredColumn="460880FB-397F-3AAA-29EC-544C3508E9EA"/>
+</associations>
+</Column>
+<Column name="NUM_RESERVA" id="397D04EC-0E2E-F90B-70B2-E47312F82F8C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>NUM_RESERVA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>3BDDDBE2-CB39-A06D-A5E2-74B4AB36CC45</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NUM_RESERVA</notNullConstraintName>
+</Column>
+<Column name="DT_RESERVA" id="B9FC83EC-33F5-D7C8-5765-A2A3D057F3AE">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>DT_RESERVA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>810A41C1-09D6-5239-4D92-8B2D92052938</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DT_RESERVA</notNullConstraintName>
+</Column>
+<Column name="DT_ENTRADA_PREVISTA" id="C0A652CB-0105-17C4-9E5B-014D1E14239C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>DT_ENTRADA_PREVISTA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>24B03487-7CFB-5006-EE31-90BB622E731A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DT_ENTRADA_PREVISTA</notNullConstraintName>
+</Column>
+<Column name="DT_SAIDA_PREVISTA" id="832C4FFB-FE95-74F0-26FE-C8EAB66E00D8">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>DT_SAIDA_PREVISTA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>8FF7D35B-1A80-9FFB-EB10-37DD9011750B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DT_SAIDA_PREVISTA</notNullConstraintName>
+</Column>
+<Column name="QTD_HOSPEDES" id="820C66E0-E888-2BDC-C46B-2F1111DCFFED">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>QTD_HOSPEDES</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>A1FB729F-F4E0-F10C-A250-B833C126412B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_SITUACAO" id="056E50C8-8E35-5998-09D7-97D99C75DEDC">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>DSC_SITUACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>E40A557D-AD20-A6D3-DC6F-0A4DF9BC5273</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_RES_SITUACAO</notNullConstraintName>
+</Column>
+<Column name="TXT_OBSERVACAO" id="B9D314D7-1F0B-D54A-8F65-F82ED498408C">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_RESERVA</sourceObjSchema>
+<sourceObjName>TXT_OBSERVACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>091F6F83-7D07-DA83-7594-FE611D98BB26</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="470B2788-C7DE-AD95-6878-00CDF59154FA" name="TB_RESERVA_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_RESERVA_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>0234AE89-DA65-D0FC-AF3E-34F0D9BD43D9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9870DA31-52E5-A854-DC6D-40D8C6BDF256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3E7180B-C808-5104-DCD5-350AB39F5B84" name="UK_RESERVA_NUMERO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_RESERVA_NUMERO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>500F1BE8-B7E5-8D88-92D0-B439B77A5D90</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="397D04EC-0E2E-F90B-70B2-E47312F82F8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD2DD4F3-A1D3-9511-2A5E-69DCEB148B44" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_RESERVA_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_RESERVA_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>F0CD0A98-3FD3-3B72-9623-3873568432C2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9870DA31-52E5-A854-DC6D-40D8C6BDF256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E2EA2A6-30E2-DFDC-EB4C-987E432B6814" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="UK_RESERVA_NUMERO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>UK_RESERVA_NUMERO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>DC331A2E-ECFC-DA2A-88ED-21658F8E1DFC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="397D04EC-0E2E-F90B-70B2-E47312F82F8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15E7FDD7-7896-6CC7-8884-89754D148461" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="IX_RES_HOTEL">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:50:16 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77C5E884-BD4D-0E54-1D89-D579E3A44EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24A3E3B4-F2D3-E612-2619-4B22C3FB1B00" name="FK_RES_HOSPEDE">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12D1C3E4-36A2-48A4-CF9C-0B67F66477AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF93CB2E-6D9E-99E1-295E-12E1DDDF9612" name="FK_RES_QUARTO">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F7F03F1-9938-1927-4DF0-CD0D248A2247"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3058BEC8-05BE-3320-8853-EB98958C7789" name="FK_RES_HOTEL">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77C5E884-BD4D-0E54-1D89-D579E3A44EDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

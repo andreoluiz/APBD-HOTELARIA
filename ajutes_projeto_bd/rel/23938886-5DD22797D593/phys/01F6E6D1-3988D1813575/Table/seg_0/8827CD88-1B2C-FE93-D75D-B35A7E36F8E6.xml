@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TB_QUARTO" directorySegmentName="seg_0" id="8827CD88-1B2C-FE93-D75D-B35A7E36F8E6">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NUM_ANDAR" id="23855E02-5132-B4D1-274E-E0BAD21F7725">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_SITUACAO" id="27AA5491-F1B2-E6E0-3469-EBA348DD753B">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_QUARTO" id="460880FB-397F-3AAA-29EC-544C3508E9EA">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QTD_CAPACIDADE" id="7D184024-96CB-71CE-C048-EEE77109E7DD">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_HOTEL" id="AB970C48-D6F1-95E0-585F-9B5D6B1A6C1C">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DSC_TIPO" id="EACA2A2A-FD3E-D437-05B2-D1FA152C6606">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_QUARTO" id="F4E42589-1AB2-6AA3-A9B2-9F5103E4227E">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TB_QUARTO_PK" id="3C61557B-FC48-BAC6-3A25-A5D2C74A95BB">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<schemaObject>6E51260E-EA20-DD62-473C-B31A0F46BB4A</schemaObject>
+<tableSpace>13BD9C72-1A5D-83A6-9FA4-704EA6CD0495</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_QUA_HOTEL" id="3402DE27-5CFC-F95C-DE6A-5A8AB30F2FB2">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TB_QUARTO_PK" id="DDB72373-DFCF-F7FE-C6FC-18F2C1108B6E">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:55:40 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

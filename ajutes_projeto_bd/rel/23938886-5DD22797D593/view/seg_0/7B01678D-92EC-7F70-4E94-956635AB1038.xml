@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="7B01678D-92EC-7F70-4E94-956635AB1038" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="VW_USUARIO_CONSULTA">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>VW_USUARIO_CONSULTA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>E59BA444-26A8-EC60-0298-C82C9CA0E8AE</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW VW_USUARIO_CONSULTA
+AS 
+SELECT HOTEL_GESTAO.TB_USUARIO.COD_USUARIO,
+  HOTEL_GESTAO.TB_USUARIO.NOM_USUARIO,
+  HOTEL_GESTAO.TB_USUARIO.DSC_EMAIL,
+  HOTEL_GESTAO.TB_USUARIO.DSC_SITUACAO,
+  HOTEL_GESTAO.TB_USUARIO.DT_CRIACAO,
+  HOTEL_GESTAO.TB_USUARIO.DT_ULTIMO_LOGIN,
+  HOTEL_GESTAO.TB_USUARIO.DT_ATUALIZACAO
+FROM HOTEL_GESTAO.TB_USUARIO]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COD_USUARIO" id="9B4D1144-35D3-CF35-D7E2-1417FB3518C3">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>COD_USUARIO</alias>
+<dataType>NUMBER (19)</dataType>
+<headerAlias>COD_USUARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>04C35973-AF60-D2CE-6CC5-8279EEC298F9</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="NOM_USUARIO" id="4B61AA41-752D-4500-B0BC-10C0A37C1AF7">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NOM_USUARIO</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<headerAlias>NOM_USUARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>02A790B8-7493-42E4-BD6B-88D23C6EEC16</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DSC_EMAIL" id="558536CB-5199-E284-7378-0F00E108A922">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_EMAIL</alias>
+<dataType>VARCHAR2 (150 BYTE)</dataType>
+<headerAlias>DSC_EMAIL</headerAlias>
+<reference>false</reference>
+<referencedColumn>7B319C46-BA8C-47A3-E1F5-D304E6EB333F</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DSC_SITUACAO" id="B3C97417-822F-4905-233A-2B158DE2D757">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DSC_SITUACAO</alias>
+<dataType>VARCHAR2 (200 BYTE)</dataType>
+<headerAlias>DSC_SITUACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>4286E953-9354-9362-BD2B-D4FE1DDA2180</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_CRIACAO" id="D4FC0549-4F1D-8B65-D47A-1F4F4CCD91E0">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_CRIACAO</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_CRIACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>2BDF7DAB-4250-CAD5-52F6-BDEF8B12E422</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_ULTIMO_LOGIN" id="37A5F455-89CC-105E-F31B-B0398FAD4933">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_ULTIMO_LOGIN</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_ULTIMO_LOGIN</headerAlias>
+<reference>false</reference>
+<referencedColumn>65E87946-BF5E-4715-1227-DE4B3EDBC119</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DT_ATUALIZACAO" id="0475B0D1-E229-F2D6-5351-8439F29CC84D">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DT_ATUALIZACAO</alias>
+<dataType>TIMESTAMP</dataType>
+<headerAlias>DT_ATUALIZACAO</headerAlias>
+<reference>false</reference>
+<referencedColumn>8F4F2C6B-FED9-5066-BE5C-61EC8E1E9000</referencedColumn>
+<viewID>7B01678D-92EC-7F70-4E94-956635AB1038</viewID>
+</viewElement>
+</viewElements>
+</TableView>

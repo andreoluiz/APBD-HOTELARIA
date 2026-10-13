@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="975E32F2-BF68-5E58-4739-858B97B340D7" containerWithKeyObject="A3117E7F-295E-5D01-6BD1-44DDA1AF9CF5" localFKIndex="608D1A79-82E5-84D4-727C-120B447B1D96" name="FK_AUD_ALT_EVENTO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>FK_AUD_ALT_EVENTO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>6A2966B7-E5DB-AEA5-2B3F-CE4E343D6121</importedID>
+<referredTableLongName>HOTEL_GESTAO.TB_AUDITORIA_EVENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>792D8214-EEFD-FF51-544E-184866F7B130</referredTableID>
+<keyObject>94F2763A-0A94-E49E-6343-803F08C5DA33</keyObject>
+<referredKeyID>94F2763A-0A94-E49E-6343-803F08C5DA33</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_AUDITORIA_EVENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

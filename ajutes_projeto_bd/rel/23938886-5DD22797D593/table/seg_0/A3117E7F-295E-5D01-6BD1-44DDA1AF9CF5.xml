@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3117E7F-295E-5D01-6BD1-44DDA1AF9CF5" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_AUDITORIA_ALTERACAO">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>C05487FE-3898-C180-C367-2244A82917AC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_AUDITORIA_ALTERACAO" id="B04BC806-AFD6-9449-0874-4D219A4721CD">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_AUDITORIA_ALTERACAO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>EB6FE200-C405-8AEA-20D9-90D42030E401</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_cod_auditoria_alteracao</autoIncrementSequenceName>
+<autoIncrementTriggerName>TRG_AUD_ALT_BI</autoIncrementTriggerName>
+<notNullConstraintName>NN_COD_AUDITORIA_ALTERACAO</notNullConstraintName>
+</Column>
+<Column name="COD_AUDITORIA_EVENTO" id="13AFF821-F54E-6539-0487-06DF1D806FB3">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_AUDITORIA_EVENTO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>DFDB3595-2504-B067-82EE-209065E8AFF5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_AUD_ALT_EVENTO</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="975E32F2-BF68-5E58-4739-858B97B340D7" referredColumn="65E875E8-7B6B-54FC-AFCD-41BB86B171CB"/>
+</associations>
+</Column>
+<Column name="NOM_TABELA" id="1E0998E3-3B6D-7277-9FFF-8172383C5365">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>NOM_TABELA</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>B5D06286-2EF1-FF50-6A13-830B25CBEBCF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_COD_NOM_TABELA</notNullConstraintName>
+</Column>
+<Column name="COD_REGISTRO" id="CD699291-01B8-5EDB-BE79-966F11FA520F">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>COD_REGISTRO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>402E82CA-30FA-1B5C-9D1C-806C5027B484</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_COD_REGISTRO</notNullConstraintName>
+</Column>
+<Column name="NOM_CAMPO" id="FA08F3B0-0C69-849B-1B7B-332B6AA47201">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>NOM_CAMPO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>7FC42DB1-A29E-610B-B8DB-3E387FFBE84E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NOM_CAMPO</notNullConstraintName>
+</Column>
+<Column name="DSC_VALOR_ANTERIOR" id="64234586-BD97-66F7-884C-9D5F149034FF">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>DSC_VALOR_ANTERIOR</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>CB347754-6297-5018-D3C4-B845C4203204</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DSC_VALOR_NOVO" id="8F88E728-48A4-8CC3-2B5D-AC4D82099550">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>TB_AUDITORIA_ALTERACAO</sourceObjSchema>
+<sourceObjName>DSC_VALOR_NOVO</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>D5B7CFAC-6290-5CD2-71DC-4F97D8266675</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0EA3EA8-846B-05E2-1436-C32183132E9C" name="TB_AUDITORIA_ALTERACAO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>6847F333-76A1-EFE4-3789-0EA42AF4CA59</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B04BC806-AFD6-9449-0874-4D219A4721CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7AD8094-26C6-1B87-2C91-846B7EC77E1B" schemaObject="6E51260E-EA20-DD62-473C-B31A0F46BB4A" name="TB_AUDITORIA_ALTERACAO_PK">
+<sourceConnName>PROJETO_APBD</sourceConnName>
+<sourceObjSchema>HOTEL_GESTAO</sourceObjSchema>
+<sourceObjName>TB_AUDITORIA_ALTERACAO_PK</sourceObjName>
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<importedID>51472BDC-1AC2-5644-582F-C935FD4F26C5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B04BC806-AFD6-9449-0874-4D219A4721CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="608D1A79-82E5-84D4-727C-120B447B1D96" name="FK_AUD_ALT_EVENTO">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:06:57 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13AFF821-F54E-6539-0487-06DF1D806FB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

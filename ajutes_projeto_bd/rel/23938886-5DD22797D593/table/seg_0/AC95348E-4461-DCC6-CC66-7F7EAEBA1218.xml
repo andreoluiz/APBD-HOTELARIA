@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC95348E-4461-DCC6-CC66-7F7EAEBA1218" name="TB_CLIENTE">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:32:01 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_USUARIO" id="9F2777F4-3B05-C704-8EE2-550AE13D098F">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:32:58 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BD07525-1BAC-98A2-6FDC-AEEB099D6FFD" name="TB_CLIENTE_PK">
+<createdBy>andre</createdBy>
+<createdTime>2026-10-13 14:33:05 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F2777F4-3B05-C704-8EE2-550AE13D098F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

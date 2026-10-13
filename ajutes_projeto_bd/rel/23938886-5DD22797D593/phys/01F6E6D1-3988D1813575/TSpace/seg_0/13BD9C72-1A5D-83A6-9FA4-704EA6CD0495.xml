@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="TS_HOTEL_GESTAO" directorySegmentName="seg_0" id="13BD9C72-1A5D-83A6-9FA4-704EA6CD0495">
+<createdBy>vivia</createdBy>
+<createdTime>2026-10-13 16:56:03 UTC</createdTime>
+<ownerDesignName>ajutes_projeto_bd</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<segmentManagement>MANUAL</segmentManagement>
+</TableSpaceOraclev10g>
